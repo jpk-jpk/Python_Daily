@@ -4,7 +4,6 @@ def smart_div(func):
             print(" Exception Caught, Zero Division Error: The denominator is zero")
             return
         return func(a, b)
-
     return inner
 
 
@@ -30,6 +29,6 @@ def newt_raph(fx,
 
 
 if __name__ == "__main__":
-    y = lambda xi: (xi ** 2.0) - 7.0
+    y = lambda xi: (xi ** 2.0) + 4.0
     dy = lambda xi: 2.0 * xi
-    print(f'The root of the function is {newt_raph(y, dy, 10)}')
+    print(f'The root of the function is {newt_raph(y, dy, 0)}')
